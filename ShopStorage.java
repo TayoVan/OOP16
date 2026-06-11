@@ -13,7 +13,7 @@ public class ShopStorage implements Serializable {
         products.add(new Product("Ноутбук ASUS ROG", 54000, "Ryzen 7, RTX 4060, 16GB RAM", 24, true));
         products.add(new Product("Навушники AirPods Pro", 9500, "Active Noise Cancellation, H2 chip", 12, true));
     }
-    public static synchronized ShopStorage getInstance() {
+    public static ShopStorage getInstance() {
         if (instance == null) {
             instance = new ShopStorage();
         }

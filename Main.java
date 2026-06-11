@@ -34,6 +34,7 @@ public class Main {
                     case 3:
                         System.out.print("У вас є картка постійного покупця лояльності? (так/ні): ");
                         String answer = sc.nextLine();
+                        sc.nextLine();
                         boolean hasCard = false;
                         if ("так".equalsIgnoreCase(answer)) {
                             hasCard = true;
@@ -46,8 +47,10 @@ public class Main {
                     case 5:
                         System.out.print("Введіть назву пристрою: ");
                         String name = sc.nextLine();
+                        sc.nextLine();
                         System.out.print("Введіть ціну (грн): ");
                         int price = sc.nextInt();
+                        sc.nextLine();
                         System.out.print("Введіть тех. характеристики: ");
                         String specs = sc.nextLine();
                         System.out.print("Введіть гарантійний термін (місяців): ");
